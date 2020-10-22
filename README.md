@@ -26,7 +26,7 @@
     	</div>
     	<div style="width: 49%;display: inline-block;">
     	  <h3>加载base64加密的数据</h3>
-    	  <PdfConsult class="demo1" :isBase64File="true" :pdfUrl="getGetPDF">				  </PdfConsult>
+    	  <PdfConsult class="demo1" :isBase64File="true" :pdfUrl="getGetPDF"></PdfConsult>
     	</div>
       </div>
     </template>
