@@ -72,7 +72,7 @@
 
 ### 组件事件
 
-基于 vue-pdf 和 vue-touch 的事件需要自行添加。仅提供 pdf 的**@loaded**事件和**@error**事件
+基于 vue-pdf 和 vue-touch 的事件需要自行添加。仅提供 pdf 的 **@loaded** 事件和 **@error** 事件
 
 ## 参数
 
