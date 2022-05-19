@@ -5,9 +5,8 @@ import App from './App'
 
 Vue.config.productionTip = false
 
-//移动端手势事件
-import VueTouch from 'vue-touch'
-Vue.use(VueTouch, {name: 'v-touch'});
+import VuePdfTouch from './components/index.js'
+Vue.use(VuePdfTouch);
 
 /* eslint-disable no-new */
 new Vue({

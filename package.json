@@ -1,18 +1,38 @@
 {
   "name": "vue-pdf-touch",
-  "version": "1.0.0",
-  "description": "A Vue.js project",
-  "author": "LiuZL <dlamliu@qq.com>",
-  "private": true,
+  "version": "1.0.4",
+  "description": "基于 vue-pdf 和 vue-touch 的一个实用实例。 用于PC与移动设备间预览PDF文件，可以通过链接远程加载，也可以通过接受基于Base64加密过的密文进行加载。具体详情请自行安装查看。 头部展示 上一页 与 下一页 还有 页码 信息。在移动设备上可以 左右滑动来切换页面。",
+  "author": "iMaldway",
+  "private": false,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "start": "npm run dev",
     "build": "node build/build.js"
   },
+  "main": "src/components/index.js",
+  "files": [
+    "src/components/"
+  ],
+  "keywords": [
+    "vue",
+    "pdf",
+    "touch"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iMaldway/vue-pdf-touch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/iMaldway/vue-pdf-touch/issues"
+  },
+  "homepage": "https://github.com/iMaldway/vue-pdf-touch#readme",
   "dependencies": {
     "vue": "^2.5.2",
     "vue-pdf": "^4.2.0",
-    "vue-touch": "^2.0.0-beta.4"
+    "vue-touch": "^2.0.0-beta.4",
+    "node-sass": "4.14.1",
+    "sass": "^1.27.0",
+    "sass-loader": "^7.0.2"
   },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
@@ -32,7 +52,6 @@
     "friendly-errors-webpack-plugin": "^1.6.1",
     "html-webpack-plugin": "^2.30.1",
     "node-notifier": "^5.1.2",
-    "node-sass": "4.14.1",
     "optimize-css-assets-webpack-plugin": "^3.2.0",
     "ora": "^1.2.0",
     "portfinder": "^1.0.13",
@@ -40,8 +59,6 @@
     "postcss-loader": "^2.0.8",
     "postcss-url": "^7.2.1",
     "rimraf": "^2.6.0",
-    "sass": "^1.27.0",
-    "sass-loader": "^7.0.2",
     "semver": "^5.3.0",
     "shelljs": "^0.7.6",
     "style-loader": "^2.0.0",

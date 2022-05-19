@@ -1,8 +1,19 @@
 # vue-pdf-touch
 
 基于 vue-pdf 和 vue-touch 的一个实用实例。
-用于PC与移动设备间预览PDF文件，可以通过链接远程加载，也可以通过接受基于Base64加密过的密文进行加载。具体详情请自行安装查看。
+用于 PC 与移动设备间预览 PDF 文件，可以通过链接远程加载，也可以通过接受基于 Base64 加密过的密文进行加载。具体详情请自行安装查看。
 头部展示 **_上一页_** 与 **_下一页_** 还有 **_页码_** 信息。在移动设备上可以 **_左右滑动来切换页面_**。
+
+**安装[vue-pdf-touch](https://www.npmjs.com/package/vue-pdf-touch)**
+
+    npm i vue-pdf-touch
+
+**然后在 main.js 上导入并使用：**
+
+    import VuePdfTouch from 'VuePdfTouch'
+    Vue.use(VuePdfTouch);
+
+**或者手动安装依赖**
 
 **安装[vue-pdf](https://www.npmjs.com/package/vue-pdf)**
 
@@ -17,7 +28,7 @@
     import VueTouch from "vue-touch";
     Vue.use(VueTouch, {name: "v-touch"});
 
-最后将**src**-->**components**-->**PdfConsult**下的组件导入到你要使用到的地方
+最后将**src**-->**components**-->**VuePdfTouch**下的组件导入到你要使用到的地方
 
     <template>
       <div id="app">
